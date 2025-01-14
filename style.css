@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(laptop.jpg);
+    background-position: center;
+    background-position-y: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2em;
+    margin: 2em 0;
+    background: #e2dada;
+    width: 60%;
+    border-radius: 15px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+
+section:hover h2{
+    background-color: black;
+    color: white;
+    cursor: help;
+    
+}
+
+section:hover{
+    background-color: black;
+    color: white;
+    cursor: help;
+    transform: translateY(-10px);
+    
+}
+
+a:hover{
+    transform: translateY(-20px);
+}
