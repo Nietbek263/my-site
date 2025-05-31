@@ -1,36 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veb-saytim</title>
+  <title>Dern-Support</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Veb-saytning Bosh Sahifasi</h1>
+<header>
+  <div class="container">
+    <h1>Dern-Support</h1>
     <nav>
       <ul>
-        <li><a href="#xizmatlar">Xizmatlar</a></li>
-        <li><a href="#haqida">Biz Haqimizda</a></li>
-        <li><a href="#boglanish">Bog‘lanish</a></li>
+        <li><a href="#about">🏠 Biz haqimizda</a></li>
+        <li><a href="register.html">📝 Ro‘yxat</a></li>
+        <li><a href="#help">❓ Yordam</a></li>
+        <li><a href="#knowledge">📚 Bilimlar</a></li>
       </ul>
     </nav>
-  </header>
-  <section id="xizmatlar">
-    <h2>Xizmatlar</h2>
-    <p>Shaxsiy meeting lar uchun kichik xonalar (4 kishigacha).
-        Videokonferensiya vositalariga ega katta konferentsiya zallari (20 kishigacha). Yuqori tezlikdagi Wi-Fi.</p>
-  </section>
-  <section id="haqida">
-    <h2>Biz Haqimizda</h2>
-    <p>startaplar va kichik bizneslar uchun ofis ijarasi xizmatlarini
-        taqdim etadigan zamonaviy kovorking maydon.</p>
-  </section>
-  <section id="boglanish">
-    <h2>Bog‘lanish</h2>
-    <p>Email: example@example.com</p>
-    <p>Telefon: +998 90 123 45 67</p>
-  </section>
+  </div>
+</header>
+
+
+
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>Biz haqimizda</h2>
+    <div class="info-boxes">
+      <div class="info-box">
+        <h3>💼 Biznes mijozlar uchun</h3>
+        <p>Joyida xizmat ko‘rsatish imkoniyati mavjud.</p>
+      </div>
+      <div class="info-box">
+        <h3>👤 Individual mijozlar uchun</h3>
+        <p>Ofisga kelish yoki kur’er orqali yetkazib berish mumkin.</p>
+      </div>
+    </div>
+    <div class="info-box" style="margin-top: 10px">
+      <h3 style="margin-left: 400px">Website haqida batafsil</h3>
+      <p>Dern-Support - bu korxonalar va individual mijozlar uchun kompyuter tizimlarini ta'mirlovchi kichik IT-texnik yordam kompaniyasi.
+        Kompaniya biznes mijozlariga joyida yordam ko'rsatadi. Jismoniy shaxslar o'z kompyuterlarini kompaniya ofislaridan biriga qo'yib
+        yuborishlari yoki uni kurer orqali etkazib berishni tashkil qiladi.</p>
+    </div>
+  </div>
+</section>
+
+<section id="help" class="section">
+  <div class="container">
+    <h2>Yordam so‘rovi</h2>
+    <form class="help-form">
+      <label for="name">Ismingiz:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Telefon / Email:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="type">Muammo turi:</label>
+      <select id="type" name="type">
+        <option value="hardware">Apparat muammosi</option>
+        <option value="software">Dasturiy muammo</option>
+        <option value="network">Tarmoq muammosi</option>
+      </select>
+
+      <label for="description">Muammo tavsifi:</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <label for="date">Ta’mirlash sanasi:</label>
+      <input type="date" id="date" name="date">
+
+      <button type="submit">Yuborish</button>
+    </form>
+  </div>
+</section>
+
+<section id="knowledge" class="section">
+  <div class="container">
+    <h2>Bilimlar bazasi</h2>
+    <div class="knowledge-cards">
+      <div class="card">
+        <h3>📘 Muammolarni tashxislash</h3>
+        <p>Tizimdagi nosozliklarni qanday aniqlash kerak.</p>
+        <a href="#">O‘qish</a>
+      </div>
+      <div class="card">
+        <h3>🛠 Apparat muammolari</h3>
+        <p>Qurilmadagi xatoliklarni bartaraf etish usullari.</p>
+        <a href="#">O‘qish</a>
+      </div>
+      <div class="card">
+        <h3>💻 Dasturiy muammolar</h3>
+        <p>Ilovalar va tizim dasturlari bilan ishlashdagi muammolar.</p>
+        <a href="#">O‘qish</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Dern-Support. Barcha huquqlar himoyalangan.</p>
+  </div>
+</footer>
 </body>
 </html>

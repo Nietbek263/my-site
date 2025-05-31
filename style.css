@@ -1,64 +1,285 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
-    background-image: url(laptop.jpg);
-    background-position: center;
-    background-position-y: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-  }
-  
-  header nav ul {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav ul {
     list-style: none;
     padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  header nav ul li a {
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-  }
-  
-  section {
-    padding: 2em;
-    margin: 2em 0;
-    background: #e2dada;
-    width: 60%;
-    border-radius: 15px;
-  }
-  
-  h2 {
+    font-weight: 500;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.info-boxes {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.help-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.help-form input,
+.help-form select,
+.help-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.help-form button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.help-form button:hover {
+    background-color: #1f6391;
+}
+
+.knowledge-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+main {
+    padding: 2rem 0;
+}
+
+form#registrationForm {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form#registrationForm label {
+    font-weight: 500;
+}
+
+form#registrationForm input,
+form#registrationForm select {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form#registrationForm button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form#registrationForm button:hover {
+    background-color: #1f6391;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7fa;
     color: #333;
-  }
-
-section:hover h2{
-    background-color: black;
-    color: white;
-    cursor: help;
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-section:hover{
-    background-color: black;
+header {
+    background-color: #2c3e50;
     color: white;
-    cursor: help;
-    transform: translateY(-10px);
-    
+    padding: 1rem 0;
+    text-align: center;
 }
 
-a:hover{
-    transform: translateY(-20px);
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-toggle {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-toggle label {
+    margin: 0 1rem;
+    color: #2980b9;
+    font-weight: 500;
+}
+
+.form-toggle input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-section {
+    display: none;
+}
+
+.form-section.active {
+    display: block;
+}
+
+label {
+    font-weight: 500;
+    color: #34495e;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1f6391;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 0.5rem 0;
 }
